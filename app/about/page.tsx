@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Users, Target, Eye, Award } from "lucide-react"
+import { Users, Target, Eye, Award, TrendingUp, Zap, Globe, Clock } from 'lucide-react'
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">Haqqımızda</h1>
-            <p className="text-xl text-blue-100">Logistika sahəsində 15+ illik təcrübə və innovativ həllər</p>
+            <p className="text-xl text-blue-100">Logistika sahəsində yeni və innovativ həllər</p>
           </div>
         </div>
       </section>
@@ -23,17 +23,18 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Şirkətimizin Tarixi</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  2008-ci ildə qurulan şirkətimiz, Azərbaycanın aparıcı logistika şirkətlərindən biridir. Kiçik bir
-                  komanda olaraq başladığımız yolculuğumuzda bu gün 200+ əməkdaşımız və beynəlxalq şəbəkəmizlə xidmət
-                  göstəririk.
+                  2024-cü ildə qurulan şirkətimiz, müasir texnologiyalar və innovativ yanaşmalarla logistika sahəsində 
+                  fəaliyyət göstərir. Yeni və dinamik komandamız ilə müştərilərimizə ən yüksək keyfiyyətli xidmət 
+                  təqdim etməyi hədəfləyirik.
                 </p>
                 <p>
-                  İlk günlərdən etibarən müştəri məmnuniyyəti və keyfiyyətli xidmət prinsipləri əsasında fəaliyyət
-                  göstərən şirkətimiz, bu gün Avropa, Asiya və Orta Şərq ölkələrində geniş tərəfdaş şəbəkəsinə malikdir.
+                  Şirkətimiz quruluş mərhələsindən etibarən müştəri məmnuniyyəti və innovativ həlləri prioritet olaraq 
+                  götürmüşdür. Rəqəmsal texnologiyalardan maksimum istifadə edərək, şəffaf və etibarlı xidmət 
+                  göstərməyə çalışırıq.
                 </p>
                 <p>
-                  Texnologiyaya investisiya qoyaraq, müasir izləmə sistemləri və rəqəmsal platformalar vasitəsilə
-                  müştərilərimizə şəffaf və etibarlı xidmət təqdim edirik.
+                  Gənc və enerjili komandamız, beynəlxalq standartlara uyğun olaraq, müştərilərimizin logistika 
+                  ehtiyaclarını ən optimal şəkildə həll etmək üçün daim özünü inkişaf etdirir və yenilikləri izləyir.
                 </p>
               </div>
             </div>
@@ -49,9 +50,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-     
-
+           
       {/* Values */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -97,41 +96,39 @@ export default function AboutPage() {
 
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="h-8 w-8 text-blue-600" />
+                <TrendingUp className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">İnkişaf</h3>
-              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+              <p className="text-gray-600">Daimi inkişaf və təkmilləşmə</p>
             </div>
 
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="h-8 w-8 text-blue-600" />
+                <Zap className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Müasirləşmə</h3>
-              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+              <p className="text-gray-600">Texnoloji yeniliklər və innovasiya</p>
             </div>
 
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="h-8 w-8 text-blue-600" />
+                <Globe className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Texnolojik irəliləyiş</h3>
-              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+              <h3 className="text-xl font-semibold mb-2">Beynəlxalq Əlaqələr</h3>
+              <p className="text-gray-600">Dünya ilə əlaqə və tərəfdaşlıq</p>
             </div>
 
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="h-8 w-8 text-blue-600" />
+                <Clock className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Vaxtında çatdırılma</h3>
-              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+              <h3 className="text-xl font-semibold mb-2">Vaxtında Çatdırılma</h3>
+              <p className="text-gray-600">Dəqiq vaxt və etibarlı xidmət</p>
             </div>
-
           </div>
         </div>
       </section>
-
-   
+       
     </div>
   )
 }

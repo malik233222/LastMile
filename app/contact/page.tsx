@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -217,8 +217,7 @@ export default function ContactPage() {
                       Tel: +994 22 555 0000
                     </div>
                   </div>
-
-                
+                                
                 </CardContent>
               </Card>
             </div>
@@ -249,8 +248,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      
+          
     </div>
   )
 }

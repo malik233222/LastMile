@@ -1,10 +1,78 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield, MapPin, Package } from "lucide-react"
+import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield, MapPin, Package, X, Phone, Mail } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function ServicesPage() {
+  const [selectedService, setSelectedService] = useState<string | null>(null)
+
+  const serviceDetails = {
+    road: {
+      title: "Avtomobil Nəqliyyatı",
+      description: "Avropa və Asiya ölkələrinə sürətli və etibarlı quru yolu daşımacılığı. FTL və LTL həlləri ilə hər növ yükün təhlükəsiz çatdırılması.",
+      details: [
+        "• Avropa - Asiya marşrutları",
+        "• Express çatdırılma xidməti",
+        "• Tam sığorta təminatı",
+        "• 24/7 izləmə sistemi",
+        "• Xüsusi yüklər üçün həllər"
+      ],
+      whatsapp: "+994 50 555 0001",
+      email: "road@logistics.az"
+    },
+    sea: {
+      title: "Dəniz Nəqliyyatı",
+      description: "FCL və LCL konteyner daşımacılığı, bulk yüklər və ağır texnika üçün dəniz yolu həlləri. Dünya limanları ilə əlaqə.",
+      details: [
+        "• 20' və 40' konteyner daşımacılığı",
+        "• Bulk yük daşımacılığı",
+        "• Dünya limanları şəbəkəsi",
+        "• Gömrük rəsmiləşdirilməsi",
+        "• Ağır texnika daşımacılığı"
+      ],
+      whatsapp: "+994 50 555 0002",
+      email: "sea@logistics.az"
+    },
+    air: {
+      title: "Hava Nəqliyyatı",
+      description: "Təcili yüklərin sürətli çatdırılması üçün hava yolu həlləri. Dünya hava limanları ilə birbaşa əlaqə və express xidmətlər.",
+      details: [
+        "• 24-48 saat çatdırılma",
+        "• Xüsusi yüklər üçün həllər",
+        "• Charter uçuş təşkili",
+        "• Temperatur nəzarəti",
+        "• Təcili sənəd daşımacılığı"
+      ],
+      whatsapp: "+994 50 555 0003",
+      email: "air@logistics.az"
+    },
+    rail: {
+      title: "Dəmir Yolu Nəqliyyatı",
+      description: "Ağır və həcmli yüklərin iqtisadi daşınması üçün dəmir yolu həlləri. Çin-Avropa marşrutunda konteyner daşımacılığı.",
+      details: [
+        "• Çin-Avropa marşrutu",
+        "• Konteyner və vaqon yükləri",
+        "• 15-20 gün çatdırılma",
+        "• Ağır yük daşımacılığı",
+        "• Iqtisadi həllər"
+      ],
+      whatsapp: "+994 50 555 0004",
+      email: "rail@logistics.az"
+    }
+  }
+
+  const openServiceModal = (serviceKey: string) => {
+    setSelectedService(serviceKey)
+  }
+
+  const closeModal = () => {
+    setSelectedService(null)
+  }
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -56,7 +124,7 @@ export default function ServicesPage() {
                     Tam sığorta təminatı
                   </li>
                 </ul>
-                <Button className="w-full">Ətraflı Məlumat</Button>
+                <Button className="w-full" onClick={() => openServiceModal('road')}>Ətraflı Məlumat</Button>
               </CardContent>
             </Card>
 
@@ -95,7 +163,7 @@ export default function ServicesPage() {
                     Dünya limanları şəbəkəsi
                   </li>
                 </ul>
-                <Button className="w-full">Ətraflı Məlumat</Button>
+                <Button className="w-full" onClick={() => openServiceModal('sea')}>Ətraflı Məlumat</Button>
               </CardContent>
             </Card>
 
@@ -134,7 +202,7 @@ export default function ServicesPage() {
                     Charter uçuş təşkili
                   </li>
                 </ul>
-                <Button className="w-full">Ətraflı Məlumat</Button>
+                <Button className="w-full" onClick={() => openServiceModal('air')}>Ətraflı Məlumat</Button>
               </CardContent>
             </Card>
 
@@ -173,7 +241,7 @@ export default function ServicesPage() {
                     15-20 gün çatdırılma
                   </li>
                 </ul>
-                <Button className="w-full">Ətraflı Məlumat</Button>
+                <Button className="w-full" onClick={() => openServiceModal('rail')}>Ətraflı Məlumat</Button>
               </CardContent>
             </Card>
           </div>
@@ -251,7 +319,73 @@ export default function ServicesPage() {
         </div>
       </section>
 
-   
+      {/* Service Modal */}
+      {selectedService && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-bold text-gray-900">
+                  {serviceDetails[selectedService as keyof typeof serviceDetails].title}
+                </h2>
+                <button
+                  onClick={closeModal}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+              
+              <p className="text-gray-600 mb-6">
+                {serviceDetails[selectedService as keyof typeof serviceDetails].description}
+              </p>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold mb-3">Xidmət Təfərrüatları:</h3>
+                <ul className="space-y-2 text-gray-600">
+                  {serviceDetails[selectedService as keyof typeof serviceDetails].details.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="border-t pt-6">
+                <h3 className="text-lg font-semibold mb-4">Bizimlə Əlaqə:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a
+                    href={`https://wa.me/${serviceDetails[selectedService as keyof typeof serviceDetails].whatsapp.replace(/[^0-9]/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 border rounded-lg hover:bg-green-50 transition-colors"
+                  >
+                    <Phone className="h-5 w-5 text-green-600" />
+                    <div>
+                      <div className="font-semibold">WhatsApp</div>
+                      <div className="text-sm text-gray-600">
+                        {serviceDetails[selectedService as keyof typeof serviceDetails].whatsapp}
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a
+                    href={`mailto:${serviceDetails[selectedService as keyof typeof serviceDetails].email}`}
+                    className="flex items-center gap-3 p-4 border rounded-lg hover:bg-blue-50 transition-colors"
+                  >
+                    <Mail className="h-5 w-5 text-blue-600" />
+                    <div>
+                      <div className="font-semibold">E-poçt</div>
+                      <div className="text-sm text-gray-600">
+                        {serviceDetails[selectedService as keyof typeof serviceDetails].email}
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+       
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield, FileCheck2 } from "lucide-react"
+import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield, FileCheck2 } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 
@@ -10,23 +10,31 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 lg:py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">Dünyaya Açılan Qapınız</h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100">
-              Beynəlxalq yük daşımacılığında etibarlı tərəfdaşınız. Quru, dəniz, hava və dəmir yolu ilə sürətli və
-              təhlükəsiz çatdırılma.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-3">
-                Xidmətlərimiz
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3 bg-transparent"
-              >
-                Bizimlə Əlaqə
-              </Button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6">Dünyaya Açılan Qapınız</h1>
+              <p className="text-xl lg:text-2xl mb-8 text-blue-100">
+                Beynəlxalq yük daşımacılığında etibarlı tərəfdaşınız. Quru, dəniz, hava və dəmir yolu ilə sürətli və
+                təhlükəsiz çatdırılma.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-3">
+                  Xidmətlərimiz
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3 bg-transparent"
+                >
+                  Bizimlə Əlaqə
+                </Button>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <Ship className="h-64 w-64 text-blue-200 opacity-80" />
+                <Truck className="h-32 w-32 text-white absolute -bottom-8 -right-8" />
+              </div>
             </div>
           </div>
         </div>
@@ -37,8 +45,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Xidmətlərimiz</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-Çeşidli nəqliyyat növləri və Logistika məsələləri  ilə bağlı xidmətinizdəyik!
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Çeşidli nəqliyyat növləri və Logistika məsələləri  ilə bağlı xidmətinizdəyik!
             </p>
           </div>
 
@@ -143,9 +150,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-    
-
+          
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
