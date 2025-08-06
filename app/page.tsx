@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield } from "lucide-react"
+import { Truck, Ship, Plane, Train, Warehouse, FileCheck, Clock, Shield, FileCheck2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -38,7 +38,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Xidmətlərimiz</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Müxtəlif nəqliyyat növləri və logistika həlləri ilə sizin ehtiyaclarınızı qarşılayırıq
+Çeşidli nəqliyyat növləri və Logistika məsələləri  ilə bağlı xidmətinizdəyik!
             </p>
           </div>
 
@@ -116,11 +116,11 @@ export default function HomePage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Niyə Bizi Seçməlisiniz?</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <Shield className="h-16 w-16 text-blue-300 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Etibarlılıq</h3>
-              <p className="text-blue-100">15+ illik təcrübə və minlərlə müştərinin etimadı</p>
+              <p className="text-blue-100"> 10 illik təcrübəyə malik kadr</p>
             </div>
 
             <div className="text-center">
@@ -134,33 +134,17 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold mb-2">Keyfiyyət</h3>
               <p className="text-blue-100">ISO sertifikatları və beynəlxalq standartlar</p>
             </div>
+
+            <div className="text-center">
+              <FileCheck2 className="h-16 w-16 text-blue-300 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Beynəlxalq dil </h3>
+              <p className="text-blue-100">İngilis dilində xidmət</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Client Logos */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Bizə Etibar Edən Müştərilər</h2>
-            <p className="text-gray-600">Dünyaca məşhur şirkətlərlə əməkdaşlıq edirik</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="flex justify-center">
-                <Image
-                  src={`/placeholder.svg?height=60&width=120&text=Client+${i}`}
-                  width={120}
-                  height={60}
-                  alt={`Client ${i}`}
-                  className="grayscale hover:grayscale-0 transition-all"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">

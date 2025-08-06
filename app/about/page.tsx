@@ -50,36 +50,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card className="h-full">
-              <CardContent className="p-8">
-                <Target className="h-12 w-12 text-blue-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Missiyamız</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Müştərilərimizin beynəlxalq ticarət fəaliyyətlərini dəstəkləmək üçün etibarlı, sürətli və iqtisadi
-                  logistika həlləri təqdim etmək. İnnovasiya və texnologiya vasitəsilə sənayedə liderlik mövqeyini
-                  qorumaq və genişləndirmək.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardContent className="p-8">
-                <Eye className="h-12 w-12 text-blue-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Vizyonumuz</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Qafqaz regionunda ən böyük və ən etibarlı logistika şirkəti olmaq. Beynəlxalq standartlara uyğun
-                  xidmət keyfiyyəti ilə müştərilərimizin uzunmüddətli tərəfdaşı kimi tanınmaq və regional ticarətin
-                  inkişafına töhfə vermək.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Values */}
       <section className="py-16">
@@ -123,37 +94,44 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-2">Şəffaflıq</h3>
               <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
             </div>
+
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Eye className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">İnkişaf</h3>
+              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Eye className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Müasirləşmə</h3>
+              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Eye className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Texnolojik irəliləyiş</h3>
+              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Eye className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Vaxtında çatdırılma</h3>
+              <p className="text-gray-600">Açıq ünsiyyət və etibarlılıq</p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Statistics */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Rəqəmlərlə Biz</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-blue-300 mb-2">15+</div>
-              <div className="text-blue-100">İllik Təcrübə</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-300 mb-2">5000+</div>
-              <div className="text-blue-100">Məmnun Müştəri</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-300 mb-2">50+</div>
-              <div className="text-blue-100">Ölkə Şəbəkəsi</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-300 mb-2">200+</div>
-              <div className="text-blue-100">Komanda Üzvü</div>
-            </div>
-          </div>
-        </div>
-      </section>
+   
     </div>
   )
 }

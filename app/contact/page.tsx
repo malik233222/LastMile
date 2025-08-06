@@ -206,7 +206,7 @@ export default function ContactPage() {
               {/* Regional Offices */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Regional Ofislər</CardTitle>
+                  <CardTitle>Regional Ofis</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
@@ -218,23 +218,7 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div>
-                    <div className="font-semibold">Sumqayıt Ofisi</div>
-                    <div className="text-gray-600">
-                      28 May küçəsi 12
-                      <br />
-                      Tel: +994 18 555 0000
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="font-semibold">Mingəçevir Ofisi</div>
-                    <div className="text-gray-600">
-                      Azadlıq prospekti 89
-                      <br />
-                      Tel: +994 147 555 0000
-                    </div>
-                  </div>
+                
                 </CardContent>
               </Card>
             </div>
@@ -266,32 +250,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Emergency Contact */}
-      <section className="py-16 bg-red-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-red-900 mb-4">Təcili Əlaqə</h2>
-            <p className="text-red-700 mb-6">24/7 təcili hallar üçün aşağıdakı nömrələrlə əlaqə saxlaya bilərsiniz</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card className="border-red-200">
-                <CardContent className="p-4 text-center">
-                  <Phone className="h-6 w-6 text-red-600 mx-auto mb-2" />
-                  <div className="font-semibold text-red-900">Təcili Xətt</div>
-                  <div className="text-red-700">+994 50 911 0000</div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-red-200">
-                <CardContent className="p-4 text-center">
-                  <Mail className="h-6 w-6 text-red-600 mx-auto mb-2" />
-                  <div className="font-semibold text-red-900">Təcili E-poçt</div>
-                  <div className="text-red-700">emergency@logistics.az</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   )
 }

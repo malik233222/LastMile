@@ -251,32 +251,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Sizə Uyğun Həll Tapaq</h2>
-          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Hər bir müştərinin ehtiyacları fərqlidir. Bizim mütəxəssislərimiz sizin üçün ən optimal həlli təklif
-            edəcəklər.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100">
-                Pulsuz Məsləhət
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-900 bg-transparent"
-              >
-                Qiymət Soruşun
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+   
     </div>
   )
 }
