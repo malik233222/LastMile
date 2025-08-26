@@ -100,7 +100,7 @@ export default function ContactPage() {
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          placeholder="Şirkət adı"
+                          placeholder="Last Mile Logistics"
                         />
                       </div>
                     </div>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     <div>
                       <div className="font-semibold">Telefon</div>
                       <div className="text-gray-600">
-                        +994 12 555 0000
+                        +994 50 352 21 97
                         <br />
                         +994 50 555 0000
                       </div>

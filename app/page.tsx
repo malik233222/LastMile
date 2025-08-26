@@ -139,13 +139,13 @@ export default function HomePage() {
             <div className="text-center">
               <FileCheck className="h-16 w-16 text-blue-300 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Keyfiyyət</h3>
-              <p className="text-blue-100">ISO sertifikatları və beynəlxalq standartlar</p>
+              <p className="text-blue-100"> Beynəlxalq standartlarda xidmət</p>
             </div>
 
             <div className="text-center">
               <FileCheck2 className="h-16 w-16 text-blue-300 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Beynəlxalq dil </h3>
-              <p className="text-blue-100">İngilis dilində xidmət</p>
+              <p className="text-blue-100">İngilis, rus, türk və digər dillərdə xidmət</p>
             </div>
           </div>
         </div>

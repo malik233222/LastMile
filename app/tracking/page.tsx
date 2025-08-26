@@ -226,7 +226,7 @@ export default function TrackingPage() {
                   <div className="text-2xl mb-2">📞</div>
                   <h3 className="font-semibold mb-2">Telefon Dəstəyi</h3>
                   <p className="text-sm text-gray-600 mb-3">24/7 müştəri xidmətləri</p>
-                  <p className="font-semibold">+994 12 555 0000</p>
+                  <p className="font-semibold">+994 50 352 21 97</p>
                 </CardContent>
               </Card>
 

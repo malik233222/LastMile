@@ -8,7 +8,7 @@ import Footer from "@/components/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "[Şirkət adı] - Beynəlxalq Logistika Xidmətləri",
+  title: "Last Mile Logistics - Beynəlxalq Logistika Xidmətləri",
   description:
     "Quru, dəniz, hava və dəmir yolu ilə beynəlxalq yük daşımacılığı. Anbar xidmətləri, gömrük rəsmiləşdirilməsi və sürətli çatdırılma həlləri.",
 }

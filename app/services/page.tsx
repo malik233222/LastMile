@@ -41,7 +41,7 @@ export default function ServicesPage() {
       title: "Hava Nəqliyyatı",
       description: "Təcili yüklərin sürətli çatdırılması üçün hava yolu həlləri. Dünya hava limanları ilə birbaşa əlaqə və express xidmətlər.",
       details: [
-        "• 24-48 saat çatdırılma",
+        "• 48-72 saat çatdırılma",
         "• Xüsusi yüklər üçün həllər",
         "• Charter uçuş təşkili",
         "• Temperatur nəzarəti",
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                 <ul className="space-y-2 text-sm text-gray-600 mb-4">
                   <li className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-blue-600" />
-                    24-48 saat çatdırılma
+                    48-72 saat çatdırılma
                   </li>
                   <li className="flex items-center gap-2">
                     <Shield className="h-4 w-4 text-blue-600" />
@@ -267,6 +267,7 @@ export default function ServicesPage() {
                   Modern anbar kompleksləri, yük saxlama, qablaşdırma və distribusiya xidmətləri.
                 </p>
                 <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Hər ölçüdə anbar xidməti</li>
                   <li>• Qısamüddətli və uzunmüddətli saxlama</li>
                   <li>• Yük qablaşdırma və etiketləmə</li>
                   <li>• İnventar idarəetməsi</li>
@@ -290,6 +291,7 @@ export default function ServicesPage() {
                   <li>• Gömrük bəyannamələrinin hazırlanması</li>
                   <li>• Vergi və rüsum hesablamaları</li>
                   <li>• Lisenziya və icazələrin alınması</li>
+                  <li>• Məsləhət və dəstək</li>
                 </ul>
                 <Button variant="outline" className="w-full bg-transparent">
                   Ətraflı
@@ -309,6 +311,7 @@ export default function ServicesPage() {
                   <li>• Next-day çatdırılma</li>
                   <li>• Door-to-door xidmət</li>
                   <li>• Real-time izləmə</li>
+                  <li>• Beynəlxalq express çatdırılma</li>
                 </ul>
                 <Button variant="outline" className="w-full bg-transparent">
                   Ətraflı

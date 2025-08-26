@@ -15,7 +15,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Truck className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">[Şirkət adı]</span>
+            <span className="text-xl font-bold text-gray-900">Last Mile Logistics</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,7 +41,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex items-center gap-2 text-sm text-gray-600">
               <Phone className="h-4 w-4" />
-              <span>+994 12 555 0000</span>
+              <span>+994 50 352 21 97</span>
             </div>
             <Button className="hidden md:block">Təklif Alın</Button>
 

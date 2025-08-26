@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Truck className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">[Şirkət adı]</span>
+              <span className="text-xl font-bold">Last Mile Logistics</span>
             </div>
             <p className="text-gray-300 mb-4">
               Beynəlxalq yük daşımacılığında etibarlı tərəfdaşınız. 15+ illik təcrübə və innovativ həllərlə
@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+994 12 555 0000</span>
+                <span className="text-gray-300">+994 50 352 21 97</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 [Şirkət adı]. Bütün hüquqlar qorunur.</p>
+            <p className="text-gray-400 text-sm">© 2024 Last Mile Logistics. Bütün hüquqlar qorunur.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Məxfilik Siyasəti
