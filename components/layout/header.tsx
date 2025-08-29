@@ -14,8 +14,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Truck className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">Last Mile Logistics</span>
+            {/* <Truck className="h-8 w-8 text-blue-600" /> */}
+            <img src="/images/160-34.svg" alt="logo_lms" width={200} />
+            {/* <span className="text-xl font-bold text-gray-900">Last Mile Logistics</span> */}
           </Link>
 
           {/* Desktop Navigation */}

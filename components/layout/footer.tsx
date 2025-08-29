@@ -8,12 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Truck className="h-8 w-8 text-blue-400" />
+            <div className="flex items-center   mb-4">
+              {/* <Truck className="h-8 w-8 text-blue-400" /> */}
+               <img src="/images/120-34.svg" alt="logo_lms" width={100} />
               <span className="text-xl font-bold">Last Mile Logistics</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Beynəlxalq yük daşımacılığında etibarlı tərəfdaşınız. 15+ illik təcrübə və innovativ həllərlə
+              Beynəlxalq yük daşımacılığında etibarlı tərəfdaşınız. 10 illik təcrübə və innovativ həllərlə
               xidmətinizdəyik.
             </p>
             <div className="flex space-x-4">
