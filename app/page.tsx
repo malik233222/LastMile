@@ -21,6 +21,7 @@ export default function HomePage() {
                 <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-3">
                   Xidmətlərimiz
                 </Button>
+                <Link href="/contact">
                 <Button
                   size="lg"
                   variant="outline"
@@ -28,6 +29,7 @@ export default function HomePage() {
                 >
                   Bizimlə Əlaqə
                 </Button>
+            </Link>
               </div>
             </div>
             <div className="flex justify-center">
@@ -164,7 +166,7 @@ export default function HomePage() {
                 Təklif Alın
               </Button>
             </Link>
-            <Link href="/tracking">
+            {/* <Link href="/tracking">
               <Button
                 size="lg"
                 variant="outline"
@@ -172,7 +174,7 @@ export default function HomePage() {
               >
                 Yükü İzləyin
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

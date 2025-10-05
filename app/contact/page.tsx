@@ -170,7 +170,7 @@ export default function ContactPage() {
                       <div className="text-gray-600">
                         +994 50 352 21 97
                         <br />
-                        +994 50 555 0000
+                        +994 50 352 21 97
                       </div>
                     </div>
                   </div>
@@ -194,9 +194,7 @@ export default function ContactPage() {
                       <div className="text-gray-600">
                         Bazar ertəsi - Cümə: 09:00 - 18:00
                         <br />
-                        Şənbə: 09:00 - 14:00
-                        <br />
-                        Bazar: Bağlı
+                        Şənbə-Bazar: 09:00 - 14:00
                       </div>
                     </div>
                   </div>

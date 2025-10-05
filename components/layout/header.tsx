@@ -30,9 +30,9 @@ export default function Header() {
             <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
               Xidmətlər
             </Link>
-            <Link href="/tracking" className="text-gray-700 hover:text-blue-600 transition-colors">
+            {/* <Link href="/tracking" className="text-gray-700 hover:text-blue-600 transition-colors">
               İzləmə
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
               Əlaqə
             </Link>
@@ -44,8 +44,9 @@ export default function Header() {
               <Phone className="h-4 w-4" />
               <span>+994 50 352 21 97</span>
             </div>
-            <Button className="hidden md:block">Təklif Alın</Button>
-
+<Link href="/contact" className="hidden md:block">
+            <Button >Təklif Alın</Button>
+            </Link>
             {/* Mobile Menu Button */}
             <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -93,7 +94,10 @@ export default function Header() {
                 Əlaqə
               </Link>
               <div className="pt-4 border-t">
+                <Link href="/contact">
                 <Button className="w-full">Təklif Alın</Button>
+             
+            </Link>
               </div>
             </nav>
           </div>

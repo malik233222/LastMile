@@ -61,11 +61,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Xidmətlərimiz</h3>
             <ul className="space-y-2">
+              <li className="text-gray-300">Anbar Xidmətləri</li>
               <li className="text-gray-300">Avtomobil Nəqliyyatı</li>
               <li className="text-gray-300">Dəniz Nəqliyyatı</li>
               <li className="text-gray-300">Hava Nəqliyyatı</li>
               <li className="text-gray-300">Dəmir Yolu</li>
-              <li className="text-gray-300">Anbar Xidmətləri</li>
               <li className="text-gray-300">Gömrük Rəsmiləşdirilməsi</li>
             </ul>
           </div>

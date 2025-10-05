@@ -21,7 +21,7 @@ export default function ServicesPage() {
         "• 24/7 izləmə sistemi",
         "• Xüsusi yüklər üçün həllər"
       ],
-      whatsapp: "+994 50 555 0001",
+      whatsapp: "+994 50 352 21 97",
       email: "road@logistics.az"
     },
     sea: {
@@ -34,7 +34,7 @@ export default function ServicesPage() {
         "• Gömrük rəsmiləşdirilməsi",
         "• Ağır texnika daşımacılığı"
       ],
-      whatsapp: "+994 50 555 0002",
+      whatsapp: "+994 50 352 21 97",
       email: "sea@logistics.az"
     },
     air: {
@@ -47,7 +47,7 @@ export default function ServicesPage() {
         "• Temperatur nəzarəti",
         "• Təcili sənəd daşımacılığı"
       ],
-      whatsapp: "+994 50 555 0003",
+      whatsapp: "+994 50 352 21 97",
       email: "air@logistics.az"
     },
     rail: {
@@ -60,7 +60,7 @@ export default function ServicesPage() {
         "• Ağır yük daşımacılığı",
         "• Iqtisadi həllər"
       ],
-      whatsapp: "+994 50 555 0004",
+      whatsapp: "+994 50 352 21 97",
       email: "rail@logistics.az"
     }
   }
@@ -93,7 +93,7 @@ export default function ServicesPage() {
             <Card className="overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=Road+Transport"
+                  src="/images/tir2.png"
                   fill
                   alt="Avtomobil nəqliyyatı"
                   className="object-cover"
@@ -171,7 +171,7 @@ export default function ServicesPage() {
             <Card className="overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=Air+Cargo"
+                  src="/images/plane.png"
                   fill
                   alt="Hava nəqliyyatı"
                   className="object-cover"
@@ -273,9 +273,9 @@ export default function ServicesPage() {
                   <li>• İnventar idarəetməsi</li>
                   <li>• Cross-docking xidmətləri</li>
                 </ul>
-                <Button variant="outline" className="w-full bg-transparent">
+                {/* <Button variant="outline" className="w-full bg-transparent">
                   Ətraflı
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
 
@@ -293,9 +293,9 @@ export default function ServicesPage() {
                   <li>• Lisenziya və icazələrin alınması</li>
                   <li>• Məsləhət və dəstək</li>
                 </ul>
-                <Button variant="outline" className="w-full bg-transparent">
+                {/* <Button variant="outline" className="w-full bg-transparent">
                   Ətraflı
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
 
@@ -313,9 +313,9 @@ export default function ServicesPage() {
                   <li>• Real-time izləmə</li>
                   <li>• Beynəlxalq express çatdırılma</li>
                 </ul>
-                <Button variant="outline" className="w-full bg-transparent">
+                {/* <Button variant="outline" className="w-full bg-transparent">
                   Ətraflı
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           </div>
