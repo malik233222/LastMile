@@ -169,8 +169,8 @@ export default function ContactPage() {
                       <div className="font-semibold">Telefon</div>
                       <div className="text-gray-600">
                         +994 50 352 21 97
-                        <br />
-                        +994 50 352 21 97
+                        {/* <br />
+                        +994 50 352 21 97 */}
                       </div>
                     </div>
                   </div>
@@ -180,9 +180,9 @@ export default function ContactPage() {
                     <div>
                       <div className="font-semibold">E-poçt</div>
                       <div className="text-gray-600">
-                        info@logistics.az
-                        <br />
-                        sales@logistics.az
+                        quluzade_oruc@mail.ru
+                        {/* <br />
+                        sales@logistics.az */}
                       </div>
                     </div>
                   </div>
@@ -202,7 +202,7 @@ export default function ContactPage() {
               </Card>
 
               {/* Regional Offices */}
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Regional Ofis</CardTitle>
                 </CardHeader>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                   </div>
                                 
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>

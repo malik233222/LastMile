@@ -102,7 +102,7 @@ export default function ServicesPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Truck className="h-6 w-6 text-blue-600" />
-                  Avtomobil Nəqliyyatı
+                  Avtomobil Yükdaşımaları
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
             <Card className="overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=Sea+Freight"
+                  src="/images/denizyolu.png"
                   fill
                   alt="Dəniz nəqliyyatı"
                   className="object-cover"
@@ -141,7 +141,7 @@ export default function ServicesPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Ship className="h-6 w-6 text-blue-600" />
-                  Dəniz Nəqliyyatı
+                  Dəniz yolu ilə Yükdaşıma
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Plane className="h-6 w-6 text-blue-600" />
-                  Hava Nəqliyyatı
+                  Hava yolu ilə Yükdaşıma
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -210,7 +210,7 @@ export default function ServicesPage() {
             <Card className="overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400&text=Railway+Transport"
+                  src="/images/demiryolu.png"
                   fill
                   alt="Dəmir yolu nəqliyyatı"
                   className="object-cover"
@@ -219,7 +219,7 @@ export default function ServicesPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Train className="h-6 w-6 text-blue-600" />
-                  Dəmir Yolu Nəqliyyatı
+                  Dəmir Yolu ilə Yükdaşıma
                 </CardTitle>
               </CardHeader>
               <CardContent>

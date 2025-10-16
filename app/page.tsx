@@ -102,8 +102,8 @@ export default function HomePage() {
             <Card className="text-center">
               <CardContent className="p-6">
                 <FileCheck className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Gömrük Rəsmiləşdirilməsi</h3>
-                <p className="text-gray-600">Bütün gömrük prosedurlarının peşəkar həlli</p>
+                <h3 className="text-xl font-semibold mb-2">Broker Xidmətləri</h3>
+                <p className="text-gray-600">İdxal/İxrac Gömrük Rəsmiləşdirilməsi</p>
               </CardContent>
             </Card>
 

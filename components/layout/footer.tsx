@@ -104,9 +104,9 @@ export default function Footer() {
               <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 İstifadə Şərtləri
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              {/* <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Çerez Siyasəti
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
